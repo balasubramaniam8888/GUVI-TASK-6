@@ -1,0 +1,70 @@
+class Person {
+    constructor(
+      name,
+      age,
+      education,
+      work,
+      int,
+      lan1,
+      lan2,
+      date,
+      vill,
+      dist
+    ) {
+      this.name = name;
+      this.age = age;
+      this.education = education;
+      this.work = work;
+      this.int = int;
+      this.lan1 = lan1;
+      this.lan2 = lan2;
+      this.date = date;
+      this.vill = vill;
+      this.dist = dist;
+    }
+    Name() {
+      console.log(`Hello,my name is ${this.name}.`);
+    }
+    Age() {
+      console.log(`and i am ${this.age} years old`);
+      console.log(`My DOB is:${this.date}`);
+    }
+    Education() {
+      console.log(`i have completed ${this.education}`);
+    }
+    workdetails() {
+      console.log(
+        `i am a graduate , currently ${this.work} looking for a job`
+      );
+    }
+    intrest() {
+      console.log(`i am intrested in listening to ${this.int}`);
+    }
+    Languages() {
+      console.log(`languages known ${this.lan1} and ${this.lan2}`);
+    }
+    Address() {
+      console.log(
+        `i am from a village called ${this.vill}  in ${this.dist} district`
+      );
+    }
+  }
+  const value = new Person(
+    "cj",
+    25,
+    "BE mechanical engineering",
+    "unemployed",
+    "music",
+    "tamil",
+    "english",
+    "16 04 1993",
+    "kulasekaranputhoor",
+    "kanayakumari"
+  );
+  value.Name();
+  value.Age();
+  value.Education();
+  value.workdetails();
+  value.intrest();
+  value.Languages();
+  value.Address();
